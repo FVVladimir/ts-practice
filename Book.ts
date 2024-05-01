@@ -10,7 +10,7 @@ class Book {
     };
 
    public  getSummary (){
-        return `${this.title} by ${this.author}published in ${this.year}`
+        return `${this.title} by ${this.author} published in ${this.year}`
     }
 
 
