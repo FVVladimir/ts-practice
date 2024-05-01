@@ -8,7 +8,7 @@ var Book = /** @class */ (function () {
     }
     ;
     Book.prototype.getSummary = function () {
-        return "".concat(this.title, " by ").concat(this.author, "published in ").concat(this.year);
+        return "".concat(this.title, " by ").concat(this.author, " published in ").concat(this.year);
     };
     return Book;
 }());
