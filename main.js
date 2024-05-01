@@ -1,6 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var Book_1 = require("./Book");
+var ElectronicBook_1 = require("./ElectronicBook");
 var newBook = new Book_1.default("ремонт швейних машин", "иван франко", 1965);
+var newElectronicBook = new ElectronicBook_1.default("ремонт швейних машин", "иван франко", 1965, "PDF");
 var bookSummary = newBook.getSummary();
+var eIectronicBookSummary = newElectronicBook.getSummary();
 console.log(bookSummary);
+console.log(eIectronicBookSummary);

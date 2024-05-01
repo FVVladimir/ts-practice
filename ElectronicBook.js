@@ -15,18 +15,18 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-var Book_ts_1 = require("./Book.ts");
+var Book_1 = require("./Book");
 var ElectronicBook = /** @class */ (function (_super) {
     __extends(ElectronicBook, _super);
-    function ElectronicBook(format) {
+    function ElectronicBook(title, author, year, format) {
         var _this = _super.call(this, title, author, year) || this;
         _this.format = format;
         return _this;
     }
     ;
     ElectronicBook.prototype.getSummary = function () {
-        return "".concat(this.title, " by ").concat(this.author, "published in ").concat(this.year, ", in format ").concat(this.format);
+        return "".concat(_super.prototype.getSummary.call(this), ", in format ").concat(this.format);
     };
     return ElectronicBook;
-}(Book_ts_1.default));
+}(Book_1.default));
 exports.default = ElectronicBook;
