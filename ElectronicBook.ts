@@ -1,15 +1,15 @@
-import Book from './Book.ts';
+import Book from './Book';
 
 class ElectronicBook extends Book {
     private format: string;
 
-    constructor(format: string){
+    constructor(title: string, author: string, year: number,format: string){
         super(title, author, year);
         this.format = format
     };
 
     public getSummary (){
-        return `${this.title} by ${this.author}published in ${this.year}, in format ${this.format}`
+        return `${super.getSummary()}, in format ${this.format}`
     }
 }
 
